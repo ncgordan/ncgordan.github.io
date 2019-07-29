@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr" class="">
+    <head>
+
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title></title>
+        <meta name="title" content="" />
+        <meta name="description" content="" />                
+
+		<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Noto+Sans:400|Raleway:400,500,600,700" rel="stylesheet">
+		
+        <style>			
+			body, h1,h2,h3,h4,h5,h6,p{
+				margin:0;
+				padding:0;
+				font-weight: 400;
+				font-family: 'Raleway', sans-serif;
+				color:#555;
+				line-height: 1.45;
+				
+			}
+			
+			h1{
+				font-size: 3em;
+				font-family: 'Abril Fatface', cursive;
+				font-weight: 400;
+				border:2px solid #555;
+				padding: 8px 24px;
+				margin:auto;
+				margin-bottom:10px;
+				width:380px;
+							
+			}
+			h2{
+				font-size: 1.2em;
+				margin-bottom:20px;
+				color:#777;
+				text-transform: uppercase;
+				
+			}
+			h3{
+				font-size: 1em;
+				font-weight: 600;	
+				color:#333;				
+				margin-bottom:10px;
+				text-transform: uppercase;
+			}
+			h4{
+				font-weight: 600;
+				color: #777;
+				font-size: 0.85em;
+			}
+			h5{font-size: 0.7em;}
+			p{
+				font-size: 0.65em;
+				font-family: 'Noto Sans', sans-serif;
+				font-weight: 400;
+			}
+			
+			section{padding:0 15px;}
+			header { grid-area: H; text-align:center;}
+			section.left { grid-area: L; text-align:right;border-right:1px solid #cecece;}
+			section.right { grid-area: R; text-align:left;border-left:1px solid #cecece;}
+			footer { grid-area: F; text-align:center;}
+			section.email  { grid-area: E; text-align:center;}
+			section.mobile { grid-area: M; text-align:center;}
+			section.telegram { grid-area: T; text-align:center;}
+			hr{border:1px solid #cecece;margin-bottom:10px;}
+			
+			svg{height:40px;fill:#555;}
+			
+			.grid-container {
+				display: grid;
+				grid-template-areas:
+					'H H H H H H'
+					'L L L R R R'
+					'F F F F F F'					
+					'M M E E T T';
+				grid-gap: 0px;
+				background-color: #fff;
+				padding: 2%;
+			}
+        </style>
+    </head>    
+    <body class="grid-container">
+	
+		<header>	
+			<h1>Gordan N.Cajic</h1>
+			<h2>Programador Web</h2>			
+		</header>
+	
+	
+		<section class="left">
+			<div class="grid-item">
+				<h3>Experiencia Laboral</h3>
+                
+				<h5>Enero 2019 - Junio 2019</h5>
+				<h4>Widitek Technology S.L.</h4>
+				<p>Programación de un planificador de presupuestos como el Presto, para un cliente del sector de la construcción.</p>
+                <p>Linux + Apache + Mysql + PHP + Javascript</p>	
+				<br />
+                
+				<h5>Diciembre 2016 - Julio 2018</h5>
+				<h4>Programador Web Autónomo</h4>
+				<p>Diseño y Creación de una aplicación para gestión biblioteconómica y de facturación para cliente particular (ERP + CRM).</p>
+                <p>Linux + Apache + Mysql + PHP + Javascript</p>
+				<br />
+				
+				<h5>Septiembre 2016 - Marzo 2017</h5>
+				<h4>Eurorutas S.L.</h4>
+				<p>Diseño y Creación de un portal de reservas de viajes y planificador interno de circuitos turísticos.</p>
+                <p>Linux + Apache + Mysql + PHP + Javascript</p>
+				<br />
+			
+				<h5>Febrero 2015 - Febrero 2016</h5>
+				<h4> Vida en Marte S.L.</h4>
+				<p>Creación de la página corporativa de la empresa y desarrollo de herramientas back-end para gestionar bases de datos de una app (Real Madrid Legends).</p>
+                <p>Linux + Apache + Mysql + PHP + Javascript; MongoDb + Express + Angular + Nodejs; C# + Unity3D</p>
+				<br />
+									
+				<h5>Marzo 2013 - Noviembre 2014</h5>
+				<h4>CatEffects S.L. Soluciones Tecnológicas</h4>
+				<p>Creación de páginas web corporativas para diversos clientes. Gestión de hostings, instalación de wordpress, y resolución de incidencias técnicas.</p>
+                <p>Linux + Apache + Mysql + PHP + Javascript</p>
+				<br />
+				
+				<h5>2008 - 2015</h5>
+				<h4>IMSALUD, Comunidad de Madrid</h4>
+				<p>Auxiliar Administrativo y de Celador, en distintos centros del Imsalud en la Comunidad de Madrid, haciendo sustituciones.</p>
+				<br />
+				
+				<h5>Junio 2003 - Octubre 2011</h5>
+				<h4>INFOMA, Comunidad de Madrid</h4>
+				<p>Auxiliar de Control en la Campaña veraniega del INFOMA (Prevención de Incendios Forestales).</p>
+				<br />
+		
+				<h5>1999 - 2004</h5>
+				<h4>Traductor Autónomo</h4>
+				<p>Traducción de Manuales y Patentes (Químicas, Tecnológicas, de Procedimientos Industriales, Invenciones en general), de Inglés a Castellano, y de Francés a Castellano.</p>
+				
+				
+			</div>
+			</section>
+		<section class="right">
+			<div class="grid-item">
+				<h3>Formación Académica</h3>
+				<h5>Junio 2013</h5>
+				<h4>IES Palomeras/Vallecas I</h4>
+				<p>Ciclo Formativo de Grado Superior de Desarrollo de Aplicaciones Informáticas.</p>
+				<br />
+				
+			</div>
+			<div class="grid-item">
+				<h3>Formación Complementaria</h3>
+					
+				<h5>Octubre 2018 - Diciembre 2018</h5>
+				<h4>CFTIC Getafe y CICE</h4>
+				<p>Desarrolllo de Videojuegos y Realidad Virtual con Unity3D</p>	
+				<br />	
+					
+				<h5>Julio 2007</h5>
+				<p>Permisos de conducir tipo AM, A1,A2 y A.</p>	
+				<br />
+				
+				<h5>Marzo 2006 - Julio 2006</h5>
+				<h4>GrupoTrazos Centro de Formación</h4>
+				<p>Curso Superior de Creación de Videojuegos. Temario: Programación de Videojuegos en C++ para DirectX sobre Windows. Duración: 500h.</p>
+				<br />
+				
+				<h5>Octubre 2005 - Febrero 2006</h5>
+				<h4>GrupoTrazos Centro de Formación</h4>
+				<p>Curso Superior de AutoDesk 3D Studio Max. Temario: Modelado 3D; Materiales; Texturizado; Iluminación; Renderizado con VRay; Animación básica. Duración: 500h.</p>
+				<br />
+				
+				<h5>Noviembre 2005 - Febrero 2006</h5>
+				<h4>Academia Learning, Innovaciones Pedagógicas S.A</h4>
+				<p>Programador de Aplicaciones en Redes, Internet, Intranet, Extranet. Temario:Fundamentos de JAVA; clases, herencia, objetos, variables, métodos y funciones. Duración: 300h.</p>
+				<br />	
+				
+				<h5>Febrero 2005</h5>
+				<p>Permiso de conducir tipo B.</p>
+				<br />
+				
+			</div>
+			<div class="grid-item">
+				<h3>Conocimientos Informáticos</h3>				
+				
+				<p>LAMP: Linux + Apache + MySQL + PHP</p>
+				<p>MEAN: MongoDB + Express + Angular + NodeJS</p>
+				<p>3D y Videojuegos: AutoDesk 3D Studio Max, Substance Painter, Unity3D.</p>
+				<br />
+				
+			</div>	
+			<div class="grid-item">
+				<h3>Idiomas</h3>
+				
+				<p>Inglés nivel Medio: oral, escrito y entendido.</p>
+				<p>Francés nivel Básico: oral, escrito y entendido.</p>
+				<br />
+			</div>	
+			
+		</section>
+		
+		<footer><hr /></footer>
+		
+		<section class="mobile">
+		
+			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve">
+			<g><path d="M56.612,4.569c-0.391-0.391-1.023-0.391-1.414,0s-0.391,1.023,0,1.414c3.736,3.736,3.736,9.815,0,13.552   c-0.391,0.391-0.391,1.023,0,1.414c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293   C61.128,16.434,61.128,9.085,56.612,4.569z"></path>
+			<path d="M52.401,6.845c-0.391-0.391-1.023-0.391-1.414,0s-0.391,1.023,0,1.414c1.237,1.237,1.918,2.885,1.918,4.639   s-0.681,3.401-1.918,4.638c-0.391,0.391-0.391,1.023,0,1.414c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293   c1.615-1.614,2.504-3.764,2.504-6.052S54.017,8.459,52.401,6.845z"></path>
+			<path d="M4.802,5.983c0.391-0.391,0.391-1.023,0-1.414s-1.023-0.391-1.414,0c-4.516,4.516-4.516,11.864,0,16.38   c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293c0.391-0.391,0.391-1.023,0-1.414   C1.065,15.799,1.065,9.72,4.802,5.983z"></path>
+			<path d="M9.013,6.569c-0.391-0.391-1.023-0.391-1.414,0c-1.615,1.614-2.504,3.764-2.504,6.052s0.889,4.438,2.504,6.053   c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293c0.391-0.391,0.391-1.023,0-1.414   c-1.237-1.237-1.918-2.885-1.918-4.639S7.775,9.22,9.013,7.983C9.403,7.593,9.403,6.96,9.013,6.569z"></path>
+			<circle cx="30" cy="53" r="2"></circle>
+			<path d="M42.595,0H17.405C14.976,0,13,1.977,13,4.405v51.189C13,58.023,14.976,60,17.405,60h25.189C45.024,60,47,58.023,47,55.595   V4.405C47,1.977,45.024,0,42.595,0z M33,3h1c0.552,0,1,0.447,1,1s-0.448,1-1,1h-1c-0.552,0-1-0.447-1-1S32.448,3,33,3z M26,3h4   c0.552,0,1,0.447,1,1s-0.448,1-1,1h-4c-0.552,0-1-0.447-1-1S25.448,3,26,3z M30,57c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4   S32.206,57,30,57z M45,46H15V8h30V46z"></path>
+			</g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
+			</svg>
+			<br />
+			
+		</section>
+		
+		<section class="email">
+		
+			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="79.536px" height="79.536px" viewBox="0 0 79.536 79.536" style="enable-background:new 0 0 79.536 79.536;" xml:space="preserve">
+			<g><path d="M39.773,1.31L0,31.004v47.222h79.536V31.004L39.773,1.31z M28.77,22.499   c1.167-2.133,2.775-3.739,4.815-4.805c2.035-1.075,4.357-1.616,6.983-1.616c2.214,0,4.191,0.435,5.921,1.292   c1.729,0.87,3.045,2.094,3.967,3.687c0.9,1.595,1.367,3.334,1.367,5.217c0,2.247-0.694,4.279-2.082,6.097   c-1.74,2.292-3.961,3.436-6.68,3.436c-0.732,0-1.279-0.122-1.654-0.38c-0.365-0.262-0.621-0.632-0.743-1.129   c-1.022,1.012-2.231,1.52-3.589,1.52c-1.465,0-2.679-0.507-3.643-1.509c-0.966-1.012-1.447-2.361-1.447-4.031   c0-2.084,0.578-3.966,1.743-5.672c1.416-2.084,3.218-3.13,5.424-3.13c1.571,0,2.731,0.601,3.475,1.805l0.331-1.468h3.5   l-1.998,9.479c-0.125,0.606-0.187,0.986-0.187,1.163c0,0.228,0.052,0.38,0.149,0.497c0.099,0.111,0.223,0.165,0.357,0.165   c0.436,0,0.979-0.248,1.646-0.769c0.901-0.663,1.627-1.574,2.181-2.695c0.554-1.129,0.839-2.299,0.839-3.508   c0-2.165-0.782-3.977-2.352-5.445c-1.573-1.45-3.77-2.185-6.578-2.185c-2.393,0-4.417,0.487-6.077,1.468   c-1.66,0.966-2.913,2.343-3.765,4.114c-0.839,1.76-1.258,3.607-1.258,5.52c0,1.856,0.479,3.552,1.411,5.074   c0.945,1.533,2.26,2.641,3.956,3.345c1.696,0.697,3.643,1.046,5.828,1.046c2.097,0,3.909-0.293,5.432-0.881   c1.522-0.587,2.739-1.457,3.666-2.641h2.807c-0.88,1.792-2.227,3.192-4.049,4.215c-2.092,1.163-4.64,1.74-7.644,1.74   c-2.918,0-5.426-0.487-7.542-1.468c-2.121-0.986-3.689-2.434-4.73-4.35c-1.028-1.918-1.535-4.008-1.535-6.268   C27.017,26.952,27.595,24.64,28.77,22.499z M2.804,31.941l29.344,19.68L2.804,74.333V31.941z M5.033,75.844l34.74-26.885   l34.729,26.885H5.033z M76.729,74.333L47.391,51.621l29.339-19.68V74.333z M41.205,24.661c0.466,0.531,0.699,1.295,0.699,2.292   c0,0.891-0.174,1.856-0.513,2.879c-0.334,1.036-0.743,1.826-1.209,2.361c-0.318,0.375-0.658,0.652-0.992,0.826   c-0.439,0.249-0.906,0.37-1.41,0.37c-0.674,0.006-1.23-0.264-1.691-0.794c-0.45-0.531-0.673-1.346-0.673-2.465   c0-0.839,0.158-1.805,0.487-2.889c0.329-1.088,0.81-1.916,1.453-2.509c0.647-0.588,1.346-0.881,2.1-0.881   C40.162,23.856,40.749,24.125,41.205,24.661z"></path>
+			</g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
+			</svg>
+			<br />
+			
+		</section>
+		
+		<section class="telegram">
+		
+			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve">
+			<g id="XMLID_496_"><path id="XMLID_497_" d="M5.299,144.645l69.126,25.8l26.756,86.047c1.712,5.511,8.451,7.548,12.924,3.891l38.532-31.412   c4.039-3.291,9.792-3.455,14.013-0.391l69.498,50.457c4.785,3.478,11.564,0.856,12.764-4.926L299.823,29.22   c1.31-6.316-4.896-11.585-10.91-9.259L5.218,129.402C-1.783,132.102-1.722,142.014,5.299,144.645z M96.869,156.711l135.098-83.207   c2.428-1.491,4.926,1.792,2.841,3.726L123.313,180.87c-3.919,3.648-6.447,8.53-7.163,13.829l-3.798,28.146   c-0.503,3.758-5.782,4.131-6.819,0.494l-14.607-51.325C89.253,166.16,91.691,159.907,96.869,156.711z"></path>
+			</g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
+			</svg>
+			<br />
+			
+		</section>
+						
+    </body>
+</html>
