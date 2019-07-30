@@ -24,11 +24,15 @@ body{
 		width:100%;
 		height:100%;
         overflow: auto;
-        display: block;
-		font-family: 'Crimson Text', serif;	
+        display: block;	
         background-color:#f2f2f2;
-
-    }
+}
+body, button, input, select, table, textarea {
+    font-family: "Helvetica Neue",Verdana,Arial,sans-serif;
+    color: #191919;
+    font-size: 14px;
+    line-height: 1.5;
+}
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -38,7 +42,7 @@ body{
 		outline:0;
 	}
 	h1,h2,h3,h4,h5,h6{
-		font-family: 'Montserrat', sans-serif;
+	
 	}
 	h1,h2{
 		text-transform:uppercase;		
@@ -609,9 +613,10 @@ p.flow-text {
      <div class="navbar-fixed">
       <nav style="box-shadow: 0 0 0 black;border-bottom: 1px solid #c2c2c2;">
         <div class="nav-wrapper">
-          <a href="#!" class="brand-logo"><img src="./logos/logo.svg" /></a>
-          <a href="#" data-target="mobile_menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <a href="#!" class="brand-logo"><img src="./logos/logo.svg" /></a>        
+          <a href="#" data-target="mobile_menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>            
           <a id="carrito" href="#" data-target="shopping_cart" class="right sidenav-trigger show-on-medium-and-up" style="border-radius: 0;padding: 0;padding-left: 20px;margin: 0;"><i class="material-icons">shopping_cart</i><span id="item_count" class="new badge" data-badge-caption="">0</span></a>
+          <a href="#" data-target="login_menu" class="right sidenav-trigger show-on-medium-and-up"><i class="material-icons">account_circle</i></a>
           <ul class="right hide-on-med-and-down">
             <li><a href="#">Productos</a></li>	
             <li><a href="#">Recursos de Diseño</a></li>
@@ -619,8 +624,7 @@ p.flow-text {
             <li><a href="#">Espacios + Inspiración</a></li>
             <li><a href="#">Sobre nosotros</a></li>
               <li><a href="#">Dónde estamos</a></li>
-          </ul>
-
+          </ul>            
         </div>
       </nav>
     </div>
@@ -636,6 +640,37 @@ p.flow-text {
             <li style="position: absolute;bottom: 60px;margin: 10px;"><img src="./logos/logo.svg" /></li>
 
      </ul>
+     <ul class="sidenav" id="login_menu">
+        <li style="border-bottom: 1px solid grey;"><h4 class="" style="padding-left: 20px; margin: 7px 0px;"><i style="font-size: 2.4rem; margin: 0 10px;" class="material-icons left">account_circle</i> Loguearse</h4></li>
+         
+        <div class="row row-login">
+            <div class="input-field col s12">
+                <i class="material-icons prefix">mail_outline</i>
+                <input id="login_email" name="login_email" type="email" class="validate">
+                <label for="login_email">Email</label>
+                <span class="helper-text" data-error="MAL" data-success="BIEN"></span>
+            </div>
+            
+            <div class="input-field col s12">
+                <i class="material-icons prefix">vpn_key</i>
+                <input id="pass" name="pass" type="password">
+                <label for="pass">Contraseña</label>                
+            </div> 
+           <div class="input-field col s12" style="height: 20px;margin: 0;margin-bottom: 20px;text-align: center;"><a href="#!">He olvidado mi contraseña</a></div>
+            
+            <div class="col s12 right-align">
+                <button class="btn waves-effect waves-light" type="button">Loguearse<i class="material-icons right">send</i></button>
+            </div>           
+        </div>
+        <hr />
+        <div class="row row-login">            
+            <div class="col s12 right-align">
+                <h6>¿Aún no tiene cuenta?</h6>
+                <button class="btn waves-effect waves-light" type="button">Registrarse<i class="material-icons right">send</i></button>
+            </div>
+        </div> 
+        <li style="position: absolute;bottom: 60px; padding: 20px;"><img src="./logos/logo.svg" /></li>
+    </ul>
      <ul class="sidenav" id="shopping_cart">
          <li><a href="#!" class="brand-logo" style="padding: 5px 20px;"><img src="./logos/header_logo.svg" /></a></li>
     </ul>
@@ -683,7 +718,7 @@ https://steelcase-res.cloudinary.com/image/upload/c_fill,dpr_auto,q_70,h_180,w_4
         <section class="">    
          <div class="container"> 
                  <div class="row">
-                      <div class="col s6">
+                      <div class="col s12 m6">
                            <div class="card">
                             <div class="card-image">
  <img class="slide__image" alt="Fast Forward" src="https://steelcase-res.cloudinary.com/image/upload/c_fill,dpr_auto,q_70,h_656,w_1166/v1528332579/www.steelcase.com/2018/06/07/18-0106478.jpg" sizes="(min-width: 1260px) 1260px, 100vw" srcset="https://steelcase-res.cloudinary.com/image/upload/c_fill,dpr_auto,q_70,h_1350,w_2400/v1528332579/www.steelcase.com/2018/06/07/18-0106478.jpg 2400w 1350h, 
@@ -701,7 +736,7 @@ https://steelcase-res.cloudinary.com/image/upload/c_fill,dpr_auto,q_70,h_270,w_4
    
                  </div>
                      
-                 <div class="col s6">
+                 <div class="col s12 m6">
                            <div class="card">
                             <div class="card-image">
  <img class="slide__image" alt="designforpods" src="https://steelcase-res.cloudinary.com/image/upload/c_fill,dpr_auto,q_70,h_656,w_1166/v1562815518/www.steelcase.com/asia-en/2019/07/11/designforpods.jpg" sizes="(min-width: 1260px) 1260px, 100vw" srcset="https://steelcase-res.cloudinary.com/image/upload/c_fill,dpr_auto,q_70,h_1350,w_2400/v1562815518/www.steelcase.com/asia-en/2019/07/11/designforpods.jpg 2400w 1350h, 
@@ -922,6 +957,7 @@ https://steelcase-res.cloudinary.com/image/upload/c_fill,dpr_auto,q_70,h_270,w_4
 $(document).ready(function(){
     $('#mobile_menu').sidenav({ edge: 'left' });
 	$('#shopping_cart').sidenav({ edge: 'right' });
+    $('#login_menu').sidenav({ edge: 'right' });
     
     $('.collapsible').collapsible();
     $('.tabs').tabs();
