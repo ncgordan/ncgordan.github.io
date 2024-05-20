@@ -43,8 +43,6 @@
             <label class="lbl-life">
                 <img src="assets/img/icons/life-potion-2.svg">
                 <input type="text" id="life_points" value="100" readonly="">
-               
-               
             </label>
            
         </form>
@@ -65,10 +63,26 @@
     <section class="lower">
         <article class="experience">
             <div class="progress-bar">
-                <b>Experiencia: 8.000/10.000 (80%)</b>
-                <span style="width: 80%;"></span>
+                <b id="progressBarXP_numeric">Experiencia: 0/0 (0%); LVL: 1</b>
+                <span data-w="0" id="progressBarXP"></span>
             </div>
         </article>         
+    </section>
+
+    <section id="paused">
+        <!--<h1>The game is paused. Press ESC to resume.</h1>-->
+        <h1>El juego está pausado. Pulse la tecla ESC para continuar con el juego.</h1>
+
+        <h2>Para moverse, use las teclas WASD.</h2>
+        <h2>Para atacar con el martillo, use la barra espaciadora.</h2>
+        <h2>Si dispone de monedas, puede apuntar con el ratón y hacer click con el botón izquierdo para disparar.</h2>
+        <h2>Con la rueda del ratón puede hacer zoom.</h2>
+        <h2 id="dead_enemies">Enemigos liquidados: 0</h2>
+    </section>
+    <section id="dead">
+        <!--<h1>You died. Wanna play again? Press Spacebar, please.</h1>-->
+        <h1>Te has morido. ¿Quieres jugar de nuevo? Pulsa la barra espaciadora, por favor.</h1>
+        
     </section>
 
     <div id="follow_cursor"></div>
