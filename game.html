@@ -18,17 +18,61 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&amp;family=Ubuntu:wght@300;400;500;700&amp;display=swap" rel="stylesheet">
-	<style></style>	
+	<style>#follow_cursor{position:fixed;z-index:999;background:#333;opacity:.5;width:50px;height:50px;border-radius:50px;top:50%;left:50%;animation:pulse .5s cubic-bezier(.51,0,.4,.5) alternate infinite;transform:translate(-50%,-50%) scale(1);pointer-events:none}@keyframes pulse{0%{width:50px;height:50px}to{width:60px;height:60px}}#follow_cursor.active{animation:bounce .5s ease}@keyframes bounce{to{transform:translate(-50%,-50%) scale(2);opacity:0}0%{transform:translate(-50%,-50%) scale(1);opacity:1}}
+</style>	
+    <!-- http://localhost/slimers_v2/_build/index.html -->
 </head>
 
 <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <!--
     <section id="hud">
         <label class="indicator">
-            <img src="assets/img/coin.png">x
-            <input type="number" id="coins_recount" value="10">
+            <img src="assets/img/characters/crystal_mauler.png"/>  
+            <input type="number" id="life_points" value="100" />         
         </label>
+        <label class="indicator">
+            <img src="assets/img/coin.png"/>x
+            <input type="number" id="coins_recount" value="10" />
+        </label>
+       
     </section>
+-->
+    <section id="hud2">      
+        <form>
+            <label class="lbl-life">
+                <img src="assets/img/icons/life-potion-2.svg">
+                <input type="text" id="life_points" value="100" readonly="">
+               
+               
+            </label>
+           
+        </form>
+        <figure>
+            <img src="assets/img/characters/crystal_mauler.png">            
+        </figure>
+        <form>
+          
+            <label class="lbl-coins">
+                <input type="text" id="coins_recount" value="0" readonly="">
+                <img src="assets/img/icons/japan-coins-svgrepo-com.svg">
+               
+            </label>
+        </form>
+       
+    </section>
+
+    <section class="lower">
+        <article class="experience">
+            <div class="progress-bar">
+                <b>Experiencia: 8.000/10.000 (80%)</b>
+                <span style="width: 80%;"></span>
+            </div>
+        </article>         
+    </section>
+
+    <div id="follow_cursor"></div>
+    <script src="assets/js/follow_cursor.js"></script>
     <script type="module" src="dist/Main.js"></script>
 
 

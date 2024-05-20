@@ -18,7 +18,7 @@ const bob = document.getElementById('follow_cursor');
 		  bob.style.left = ballX + 'px';
 		  bob.style.top = ballY + 'px';
 
-		  requestAnimationFrame(animate)
+		  requestAnimationFrame(animate);
 
 		};
 
@@ -37,5 +37,9 @@ const bob = document.getElementById('follow_cursor');
 		  void bob.offsetWidth;
 		  
 		  bob.classList.add('active');
+
+		  setTimeout(() => {
+			bob.classList.remove('active');
+		}, 500);
 		  
 		},false);
